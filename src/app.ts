@@ -9,8 +9,8 @@ import { borrowRoute } from "./modules/Borrow/borrow.route";
 const app:Application = express()
 app.use(express.json())
 
-app.use('/books',bookRoute)
-app.use('/borrow',borrowRoute)
+app.use('/api/books',bookRoute)
+app.use('/api/borrow',borrowRoute)
 
 //error handler  middleware 
 app.use(zodErrorHandler as ErrorRequestHandler );
